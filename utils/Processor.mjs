@@ -34,7 +34,8 @@ class Processor {
 
     // Пример для YouTube:
     static async processYouTube(url) {
-        // Ваш код для обработки YouTube видео
+        const result = await alldl.rahadytdl(url);
+        console.log(result);
     }
 
     // Метод для выбора нужного обработчика в зависимости от URL
