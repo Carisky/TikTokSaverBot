@@ -14,6 +14,7 @@
     "dotenv": "^16.4.5",
     "node-telegram-bot-api": "^0.66.0",
     "nodemon": "^3.1.4",
-    "rahad-all-downloader": "^2.1.16"
+    "rahad-all-downloader": "^2.1.16",
+    "url": "^0.11.4"
   }
 }
