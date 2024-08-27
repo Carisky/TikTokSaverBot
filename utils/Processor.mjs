@@ -15,7 +15,7 @@ class Processor {
                 const videoBuffer = await response.buffer();
                 return {
                     buffer: videoBuffer,
-                    caption: result.title || 'Ваше TikTok видео',
+                    caption: result.title || 'Ваше TT видео',
                     type: 'video/mp4'
                 };
             } else {
