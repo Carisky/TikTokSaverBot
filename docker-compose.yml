@@ -11,3 +11,10 @@ services:
     volumes:
       - .:/usr/src/app
     restart: always
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: telegram_bot --interval 300
