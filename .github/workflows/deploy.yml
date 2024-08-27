@@ -25,6 +25,8 @@ jobs:
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
+        env:
+          ENV_VAR: ${{ secrets.ENV_VAR }}
         with:
           context: .
           push: true
