@@ -15,7 +15,7 @@ class Processor {
                 const videoBuffer = await response.buffer();
                 return {
                     buffer: videoBuffer,
-                    caption: result.title || 'Ваше TT видео',
+                    caption: result.title || 'Ваше TikTok видео',
                     type: 'video/mp4'
                 };
             } else {
@@ -35,7 +35,6 @@ class Processor {
     // Пример для YouTube:
     static async processYouTube(url) {
         const result = await alldl.rahadytdl(url);
-        console.log(result);
     }
 
     // Метод для выбора нужного обработчика в зависимости от URL
