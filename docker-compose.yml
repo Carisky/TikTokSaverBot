@@ -6,8 +6,8 @@ services:
     container_name: telegram_bot
     ports:
       - "3000:3000"
-    environment:
-      TELEGRAM_BOT_API: ${TELEGRAM_BOT_API}
+    env_file:
+      - .env
     volumes:
       - .:/usr/src/app
     restart: always
